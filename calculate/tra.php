@@ -6,12 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    
     <table border="1" align="center" width="500">
     
     <?php
     $title = "คำนวณพื้นที่สี่เหลี่ยมคางหมู";
-    $h= "5";
+    $h = "5";
     $ps = "10";
     $result = ($h*$ps)/2;
     echo '<tr>
@@ -28,13 +27,19 @@
         <td>'.$ps.'</td>
     </tr>
     <tr>
-        <td> พื้นที่สี่หลี่ยมคางหมู ( '.($h.'*'.$ps)/2.' ) : </td>
+        <td> สูตรพื้นที่สี่เหลี่ยมคางหมู (('.$h.'*'.$ps.')/2) : </td>
         <td> '.$result.'</td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+        <div><a href="./calculate.php">back</a></div>
+        </td>
     </tr>';
     ?>
+
     </table>
     </form>
-...
 
 </body>
 </html>
+

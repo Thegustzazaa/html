@@ -25,8 +25,13 @@
         <td>'.$r.'</td>
     </tr>
     <tr>
-        <td> พื้นที่วงกลม ( '.$r.' * '.$pie.' ) : </td>
+        <td> สูตรพื้นที่วงกลม ( '.$pie.' * '.$r.' ^ 2 ) : </td>
         <td> '.$result.'</td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+        <div><a href="./calculate.php">back</a></div>
+        </td>
     </tr>';
     ?>
     </table>

@@ -28,8 +28,13 @@
         <td>'.$l.'</td>
     </tr>
     <tr>
-        <td> พื้นที่สี่หลี่ยม ( '.$w.' * '.$l.' ) : </td>
+        <td> สูตรพื้นที่สี่หลี่ยม ( '.$w.' * '.$l.' ) : </td>
         <td> '.$result.'</td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+        <div><a href="./calculate.php">back</a></div>
+        </td>
     </tr>';
     ?>
     </table>

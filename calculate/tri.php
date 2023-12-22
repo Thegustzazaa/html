@@ -27,8 +27,13 @@
         <td>'.$h.'</td>
     </tr>
     <tr>
-        <td> พื้นที่สามหลี่ยม ( 1/2 * ('.$b.' * '.$h.') ) : </td>
+        <td> สูตรพื้นที่สามหลี่ยม ( 1/2 * ('.$b.' * '.$h.') ) : </td>
         <td> '.$result.'</td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+        <div><a href="./calculate.php">back</a></div>
+        </td>
     </tr>';
     ?>
 
