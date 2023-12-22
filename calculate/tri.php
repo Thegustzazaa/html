@@ -17,7 +17,7 @@
     <td colspan="2" align="center">
         <big>'.$title.'</big>
     </td>
-    <tr>    ';
+    </tr>';
     
     echo '<tr>
         <td>ความยาวฐาน :  </td>
@@ -29,7 +29,7 @@
     <tr>
         <td> พื้นที่สามหลี่ยม ( 1/2 * ('.$b.' * '.$h.') ) : </td>
         <td> '.$result.'</td>
-    <tr>';
+    </tr>';
     ?>
 
     </table>

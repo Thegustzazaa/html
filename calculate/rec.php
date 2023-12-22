@@ -18,7 +18,7 @@
     <td colspan="2" align="center">
         <big>'.$title.'</big>
     </td>
-    <tr>    ';
+    </tr>';
     
     echo '<tr>
         <td>ความกว้าง :  </td>
@@ -30,7 +30,7 @@
     <tr>
         <td> พื้นที่สี่หลี่ยม ( '.$w.' * '.$l.' ) : </td>
         <td> '.$result.'</td>
-    <tr>';
+    </tr>';
     ?>
     </table>
     </form>

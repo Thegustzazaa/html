@@ -11,14 +11,14 @@
     
     <?php
     $title = "คำนวณพื้นที่สี่เหลี่ยมคางหมู";
-    $h= "6";
+    $h= "5";
     $ps = "10";
     $result = ($h*$ps)/2;
     echo '<tr>
     <td colspan="2" align="center">
         <big>'.$title.'</big>
     </td>
-    <tr>    ';
+    </tr>';
     
     echo '<tr>
         <td>ความสูง :  </td>
@@ -30,7 +30,7 @@
     <tr>
         <td> พื้นที่สี่หลี่ยมคางหมู ( '.($h.'*'.$ps)/2.' ) : </td>
         <td> '.$result.'</td>
-    <tr>';
+    </tr>';
     ?>
     </table>
     </form>
