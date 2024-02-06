@@ -5,15 +5,15 @@
         <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #333366;
+            background-color: #3A3B3C;
             margin: 0;
             padding: 0;
         }
-
+       
         table {
             margin-top: 30px;
             background-color: #fff;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
@@ -61,31 +61,33 @@
             $address = $_GET['address'];
             $pNum = $_GET['pNum'];
             $lWork = $_GET['lWork'];
-            echo "<table align='center' width='20%' border='1'>";
+            echo "<table align='center' width='20%' border='2'>";
             echo "<tr><td colspan='2' align='center'><b>แบบฟอร์ม</b></td></tr>";
-            echo "<tr><td>ชื่อจริง :</td><td align='center'> <i> $fName </i>
-</td></tr>";
-
-            echo "<tr><td>นามสกุล :</td><td align='center'> <i> $lName </i>
-
-</td></tr>";
-            echo "<tr><td>เบอร์โทร:</td><td align='center'> <i> $pNum </i>
-
-</td></tr>";
-            echo "<tr><td>งานอดิเรก :</td><td align='center'> <i> $lWork </i>
-</td></tr>";
-
-            echo "<tr><td>เพศ :</td><td align='center'> <i> $gender </i>
-
-</td></tr>";
-
-            echo "<tr><td>ศาสนา :</td><td align='center'> <i> $religion </i>
-
-</td></tr>";
-            echo "<tr><td>ที่อยู่:</td><td align='center'> <i> $address</i>
-
-</td></tr>";
-
+            echo "<tr><td>ชื่อจริง :</td><td align='center'> <i> $fName </i></td></tr>";
+            echo "<tr><td>นามสกุล :</td><td align='center'> <i> $lName </i></td></tr>";
+            echo "<tr><td>เบอร์โทร :</td><td align='center'> <i> $pNum </i></td></tr>";
+            echo "<tr><td>งานอดิเรก :</td><td align='center'> <i> $lWork </i></td></tr>";
+            echo "<tr><td>เพศ :</td><td align='center'> <i> $gender </i></td></tr>";
+            echo "<tr><td>ศาสนา :</td><td align='center'> <i> $religion </i></td></tr>";
+            echo "<tr><td>ที่อยู่ :</td><td align='center'> <i> $address</i></td></tr>";
+            if(isset($_GET['btnSubmit']) ){
+                if($_GET['gender'] == ""){
+                    $errorMessage = "<li>You forgot to select your Gender!</li>";
+                    echo $errorMessage;
+                }else{
+                    $varGender = $_GET['gender'];
+                    echo "Gender : ".$varGender;
+                }
+            }
+            if(isset($_GET['btnSubmit']) ){
+                if($_GET['religion'] == ""){
+                    $errorMessage = "<li>You forgot to select your religion!</li>";
+                    echo $errorMessage;
+                }else{
+                    $varReligion = $_GET['religion'];
+                    echo "religion : ".$varReligion;
+                }
+            }
             echo "</table>"
         ?>
         <center><a href="HW01.php"> กลับ </a></center>

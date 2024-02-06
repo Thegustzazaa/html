@@ -5,7 +5,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #663366;
+            background-color: #3A3B3C;
             margin: 0;
             padding: 0;
         }
@@ -17,7 +17,7 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            max-width: 500px;
+            max-width: 600px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -74,49 +74,49 @@
 
 <body>
     <form method="get" action="HW01result.php">
-        <table border="1" align="center" width="500">
+        <table border="2" align="center" width="500">
             <tr>
                 <td colspan="2" align="center"><big>แบบฟอร์ม</big></td>
             </tr>
             <tr>
-                <td>ชื่อจริง : </td>
+                <td>ชื่อจริง :  </td>
                 <td><input type="text" name="fName" size="20" value="" /> </td>
 
             </tr>
-            <td>นามสกุล : </td>
+            <td>นามสกุล :  </td>
             <td><input type="text" name="lName" size="20" value="" /></td>
 
             </tr>
             </tr>
-            <td>เบอร์โทร : </td>
+            <td>เบอร์โทร :  </td>
             <td><input type="text" name="pNum" size="20" value="" /></td>
 
             </tr>
             </tr>
-            <td>งานอดิเรก : </td>
+            <td>งานอดิเรก :  </td>
             <td><input type="text" name="lWork" size="20" value="" /></td>
 
             </tr>
             <tr>
                 <td>เพศ : </td>
                 <td align="center">
-                    <input type="radio" name="gender" value="ชาย">ชาย<br>
-
-                    <input type="radio" name="gender" value="หญิง">หญิง<br>
-
+                <select name="gender">
+                    <option value="">-</option>
+                    <option value="ชาย">ชาย</option>
+                    <option value="หญิง">หญิง</option>
+                </select>
                 </td>
             </tr>
             <tr>
                 <td>ศาสนา : </td>
                 <td align="center">
-                    <input type="radio" name="religion" value="พุทธ">พุทธ<br>
-
-                    <input type="radio" name="religion" value="คริสต์">คริสต์<br>
-
-                    <input type="radio" name="religion" value="อิสลาม">อิสลาม<br>
-
-                    <input type="radio" name="religion" value="ฮินดู">ฮินดู<br>
-
+                    <select name="religion">
+                        <option value="">-</option>
+                        <option value="พุทธ">พุทธ</option>
+                        <option value="คริสต์">คริสต์</option>
+                        <option value="อิสลาม">อิสลาม</option>
+                        <option value="ฮินดู">ฮินดู</option>
+                    </select>
                 </td>
             </tr>
             <tr>
