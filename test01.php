@@ -1,29 +1,39 @@
-<head><title>แสดงการสร้างและใช้งานอารเรย์ Numberic Array</title>
+<html>
+<head><title>แสดงการสร้างและเข้าถึง Numeric Array แบบหลายมิติ</title>
 </head>
 <body>
-<?
-$MaxStudent = 10;
-for($n = 0 ; $n < $MaxStudent; $n++) {
-$score[$n] = rand(0, 100);
-}
-echo '<center><font size="4" color="blue"> Grade Report </font></center>';
-echo '<table border="1" align="center">';
-echo '<tr><td align="center" width="90">Student No.</td>';
-echo '<td align="center" width="90">Score</td></tr>';
-for($n = 0 ; $n < $MaxStudent; $n++) {
-echo '<tr><td align="center" width="90">' . ($n +1 ) . '</td>';
-echo '<td align="center" width="90">' . $score[$n] . '</td></tr>';
-}
-echo '<tr><td colspan="2" align="center"> Average Score : ';
-echo average( $score, $MaxStudent);
-echo '</td></tr></table>';
-function average($data, $max) {
-$total = 0;
-for($n = 0 ; $n < $max; $n++) {
-$total += $data[$n];
-}
-return( $total / $max );
-}
+<?php
+    $maxRow = 10;
+    $maxCol = 1 ;
+    for ( $r = 0; $r < $maxRow ; $r++ ) {
+        for ($c = 0; $c < $maxCol; $c++) {
+            $score[ $r ][ $c ]['Homework'] = rand( 0, 10);
+            $score[ $r ][ $c ]['Assignment'] = rand( 0, 20);
+            $score[ $r ][ $c ]['Midterm'] = rand( 0, 35);
+            $score[ $r ][ $c ]['Final'] = rand( 0, 35);
+        }
+        }
+            echo "<table border='1' align='center' width='40%'>";
+            echo "<tr><td width='80' align='center'>Student</td>";
+            echo "<td width='80' align='center'>Homework</td>";
+            echo "<td width='80' align='center'>Assignment</td>";
+            echo "<td width='80' align='center'>Midterm</td>";
+            echo "<td width='80' align='center'>Final</td>";
+            echo "<td width='80' align='center'>Score</td></tr>";
+            for ( $r = 0; $r < $maxRow ; $r++ ) {
+                $std = $r + 1;
+                echo "<td align='center'>$std</td>";
+                for ( $c = 0; $c < $maxCol ; $c++ ) {
+                    echo "<td align='center'>" . $score[ $r ][ $c ]['Homework'] . "</td>";
+                    echo "<td align='center'>" . $score[ $r ][ $c ]['Assignment'] . "</td>";
+                    echo "<td align='center'>" . $score[ $r ][ $c ]['Midterm'] . "</td>";
+                    echo "<td align='center'>" . $score[ $r ][ $c ]['Final'] . "</td>";
+                    $totalScore = $score[$r][$c]['Homework'] + $score[$r][$c]['Assignment'] + $score[$r][$c]['Midterm'] + $score[$r][$c]['Final'];
+                    echo "<td align='center'>$totalScore</td>";
+                }
+                echo "</tr>";
+            }
+    echo "</table>";
 ?>
 </body>
 </html>
