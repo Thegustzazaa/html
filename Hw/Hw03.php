@@ -80,24 +80,24 @@
             </tr>
             <tr>
                 <td>ชื่อจริง :  </td>
-                <td><input type="text" name="fName" size="20" value="" /> </td>
+                <td><input type="text" name="fName" size="20" value="" required/><font color="red">*</font> </td>
 
             </tr>
                 <td>นามสกุล :  </td>
-                <td><input type="text" name="lName" size="20" value="" /></td>
+                <td><input type="text" name="lName" size="20" value="" required/><font color="red">*</font> </td>
 
             </tr>
             </tr>
                 <td>เบอร์โทร :  </td>
-                <td><input type="text" name="pNum" size="20" value="" /></td>
+                <td><input type="text" name="pNum" size="20" value="" minlenght="10"maxlength="10"placeholder="telephone number" required/><font color="red">*</font> </td>
             <tr>
                 <td>วันเกิด : </td>
-                <td><input type="date" name="birthday" required /></td>
+                <td><input type="date" name="birthday" required/><font color="red">*</font> </td>
             </tr>
             </tr>
             </tr>
                 <td>งานอดิเรก :  </td>
-                <td><input type="text" name="lWork" size="20" value="" /></td>
+                <td><input type="text" name="lWork" size="20" value="" required/><font color="red">*</font> </td>
             </tr>
             <tr>
                 <td>เพศ : </td>
@@ -106,7 +106,7 @@
                     <option value="">-</option>
                     <option value="ชาย">ชาย</option>
                     <option value="หญิง">หญิง</option>
-                </select>
+                </select >
                 </td>
             </tr>
             <tr>
