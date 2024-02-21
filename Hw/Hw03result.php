@@ -91,11 +91,7 @@
         echo "<tr><td>ที่อยู่:</td><td align='center'> <i>$address</i></td></tr>";
         echo "</table>"
 
-        if(empty(trim)($customerName))||empty(trim)($customerAddress)
-        {
-            echo"<script>alert('กรุณากรอกข้อมูลให้ครบถ้วน');
-            history.back();</script>";
-        }
+        
     ?>
     <center><a href="Hw03.php">กลับ</a></center>
 </body>
