@@ -80,11 +80,11 @@
             </tr>
             <tr>
                 <td>ชื่อจริง :  </td>
-                <td><input type="text" name="fName" size="20" value="" required/><font color="red">*</font> </td>
+                <td><input type="text" name="fName" size="20" value="" placeholder="firstname"required/><font color="red">*</font> </td>
 
             </tr>
                 <td>นามสกุล :  </td>
-                <td><input type="text" name="lName" size="20" value="" required/><font color="red">*</font> </td>
+                <td><input type="text" name="lName" size="20" value="" placeholder="surname"required/><font color="red">*</font> </td>
 
             </tr>
             </tr>
@@ -92,12 +92,12 @@
                 <td><input type="text" name="pNum" size="20" value="" minlenght="10"maxlength="10"placeholder="telephone number" required/><font color="red">*</font> </td>
             <tr>
                 <td>วันเกิด : </td>
-                <td><input type="date" name="birthday" required/><font color="red">*</font> </td>
+                <td><input type="date" name="birthday" placeholder="birth date"required/><font color="red">*</font> </td>
             </tr>
             </tr>
             </tr>
                 <td>งานอดิเรก :  </td>
-                <td><input type="text" name="lWork" size="20" value="" required/><font color="red">*</font> </td>
+                <td><input type="text" name="lWork" size="20" value="" placeholder="hobby"required/><font color="red">*</font> </td>
             </tr>
             <tr>
                 <td>เพศ : </td>
@@ -123,7 +123,7 @@
             </tr>
             <tr>
                 <td align="center">ที่อยู่:</td><td>
-                    <textarea name="address" cols="50" rows="5"></textarea>
+                    <textarea name="address" cols="50" rows="5"placeholder="adress"></textarea>
                     <br><br>
                 </td>
             </tr>
@@ -134,7 +134,7 @@
                 </td>
             </tr>
         </table>
-        
+         
     </form>
 </body>
 
