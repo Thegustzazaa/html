@@ -40,7 +40,7 @@
             {
                 echo '<tr align="center" bgcolor="">';
                 echo '<td>'.$row.'</td>';
-                echo '<td><a href="bookDetail.php?bookId='.$rs[0].'">'.$rs[0].'</a></td>';
+                echo '<td><a href="bookDetail1_edit.php?bookId='.$rs[0].'">'.$rs[0].'</a></td>';
                 echo '<td align="left">'.$rs[1].'</td>';
                 echo '<td><a href="bookUpdate.php?bookId='.$rs[0].'">[แก้ไข]</a></td>';
                 echo '<td><a href="bookDelete1.php?bookId='.$rs[0].'"onclick="return confirm(\' ยืนยันการลบข้อมูลหนังสือ '.$rs[1].'\')">[ลบ]</a></td>';
@@ -49,8 +49,9 @@
             }
             echo '</table>';
             mysqli_close ( $conn );
-            echo '<br><br><a href="bookDetail.php" class="detail">Detail</a></td>';
+            echo '<br><br><a href="book1.php" class="detail">Detail</a></td>';
             echo '<a href="menu1.php" class="detail">Back to menu</a><td>';
+            echo '<a href="bookreport.php" class="detail">report</a><td>';
             echo '</center>';
         ?>
     </body>
